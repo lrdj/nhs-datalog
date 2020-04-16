@@ -7,9 +7,10 @@ title: Home
 ================================================== -->    
 <section class="intro full-width">
     <div class="wrapintro">
-        <h1>Jekyll Theme for Marketers</h1>
-        <h2 class="lead">"Affiliates" is a Jekyll theme designed & developed by WowThemesNet, best suitable for affiliate marketing.</h2>    
-        <a href="https://github.com/wowthemesnet/affiliates-jekyll-theme/archive/master.zip" class="btn">Download</a>
+        <h1>My covid-19 data files</h1>
+        <h2 class="lead">I want to help but I also care about my data and privacy. I answer the NHS online questions once a day, adding them to a spreadsheet and uploading it to Github. The only difference is I've put the wrong birth date and month and only the first part of my postcode. Is this useful?
+        If we do that once a day, it might create a feed of our health data for NHS data-scientists to download?</h2>    
+        <a href="https://github.com/lrdj/nhs-datalog/tree/master/_data/health-data.csv" class="btn">Download Dug's .csv file</a>
     </div>
 </section>
 
@@ -17,24 +18,6 @@ title: Home
 <!-- Featured
 ================================================== -->
 <section class="featured-posts">
-
-    <div class="section-title">
-        <h2><span>Featured</span></h2>
-    </div>
-
-    <div class="row listfeaturedtag">
-
-    {% for post in site.posts %}
-
-        {% if post.featured == true %}
-
-            {% include featuredbox.html %}
-
-        {% endif %}
-
-    {% endfor %}
-
-    </div>
 
 </section>
 
@@ -48,41 +31,5 @@ title: Home
 
 <section class="recent-posts row">
 
-    <div class="col-sm-4">
-        {% include sidebar.html %}
-    </div>
-
-    <div class="col-sm-8">
-
-        <div class="section-title">
-            <h2><span>All Stories</span></h2>    
-        </div>
-
-        <div class="masonrygrid row listrecent">
-
-            {% for post in paginator.posts %}
-
-            {% unless post.featured == true %}
-
-                {% include postbox.html %}
-
-            {% endunless %}
-
-            {% endfor %}
-
-        </div> 
-
-        <!-- Pagination -->
-        <div class="bottompagination">
-
-            <span class="navigation" role="navigation">
-
-                {% include pagination.html %}
-
-            </span>
-
-        </div>
-
-    </div>
-
 </section>
+
